@@ -36,8 +36,8 @@ export async function getStaticPaths() {
   }));
 
   return {
+    fallback: "blocking",
     paths,
-    fallback: false,
   };
 }
 
@@ -63,7 +63,6 @@ export async function getStaticProps(context) {
         image: meetup.image,
       },
     },
-    revalidate: 1,
   };
 }
 
