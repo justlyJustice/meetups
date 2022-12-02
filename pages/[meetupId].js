@@ -63,6 +63,7 @@ export async function getStaticProps(context) {
         image: meetup.image,
       },
     },
+    revalidate: 1,
   };
 }
 
