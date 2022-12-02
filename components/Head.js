@@ -6,8 +6,10 @@ const MyHead = ({ description, title, image }) => {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta property="image" content={image} />
-      <meta property="url" content={`https://meetups-4igv3igrs-justylo.vercel.app/
-`} />
+      <meta
+        property="url"
+        content={`https://meetups-4igv3igrs-justylo.vercel.app/`}
+      />
 
       {/* Google / Search Engine Tags */}
       <meta itemProp="name" content={title} />
@@ -18,7 +20,10 @@ const MyHead = ({ description, title, image }) => {
       <meta property="og:title" content={title} />
       <meta property="og:image" content={image} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={webUrl} />
+      <meta
+        property="og:url"
+        content={`https://meetups-4igv3igrs-justylo.vercel.app/`}
+      />
       <meta property="og:width" content={300} />
       <meta property="og:height" content={300} />
 
