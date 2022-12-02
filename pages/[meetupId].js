@@ -3,20 +3,21 @@ import { MongoClient, ObjectId } from "mongodb";
 
 import MeetupDetail from "../components/meetups/MeetupDetail";
 
-const MeetupDetails = (props) => {
+const MeetupDetails = ({ meetup }) => {
   return (
     <>
       <Head>
-        <title>{props.meetup.title}</title>
-        <meta name="description" content={props.meetup.description} />
+        <title>{meetup.title}</title>
+        <meta name="description" content={meetup.description} />
+        <meta name="image" content={meetup.image} />
       </Head>
 
       <MeetupDetail
-        image={props.meetup.image}
-        alt={props.meetup.title}
-        title={props.meetup.title}
-        address={props.meetup.address}
-        description={props.meetup.description}
+        image={meetup.image}
+        alt={meetup.title}
+        title={meetup.title}
+        address={meetup.address}
+        description={meetup.description}
       />
     </>
   );
